@@ -25,12 +25,30 @@
             android:layout_margin="8dp" />
     </FrameLayout>
 
-    <Button
-        android:id="@+id/animate_button"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
-        android:text="@string/animate" />
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <CheckBox
+            android:id="@+id/hw_layers_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/use_hw_layers" />
+
+        <Button
+            android:id="@+id/animate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/animate" />
+
+    </RelativeLayout>
+
 
 </LinearLayout>
