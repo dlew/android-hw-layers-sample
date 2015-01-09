@@ -3,7 +3,6 @@
 
     <string name="app_name">HW Layers</string>
     <string name="animate">Animate!</string>
-    <string name="action_settings">Settings</string>
     <string name="layout1_title">The First Layout</string>
     <string name="layout2_title">The Second Layout</string>
     <string name="use_hw_layers">Use HW Layers</string>
