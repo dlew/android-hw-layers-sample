@@ -9,7 +9,6 @@ import android.support.annotation.StringRes;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
@@ -27,8 +26,8 @@ public class MainActivity extends ActionBarActivity {
 
         mHwLayerCheckbox = (CheckBox) findViewById(R.id.hw_layers_checkbox);
 
-        mLayout1 = configureLayout(R.id.layout_1, R.drawable.bg_layout_1, R.string.layout1_title, R.drawable.cats_1);
-        mLayout2 = configureLayout(R.id.layout_2, R.drawable.bg_layout_2, R.string.layout2_title, R.drawable.cats_2);
+        mLayout1 = configureLayout(R.id.layout_1, R.drawable.bg_layout_1, R.string.layout1_title);
+        mLayout2 = configureLayout(R.id.layout_2, R.drawable.bg_layout_2, R.string.layout2_title);
 
         // Start with one of the two hidden
         mLayout2.setAlpha(0);
@@ -40,17 +39,12 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    private View configureLayout(
-        @IdRes int id, @DrawableRes int background, @StringRes int title,
-        @DrawableRes int cat) {
+    private View configureLayout(@IdRes int id, @DrawableRes int background, @StringRes int title) {
         View layout = findViewById(id);
         layout.setBackgroundResource(background);
 
         TextView titleView = (TextView) layout.findViewById(R.id.title);
         titleView.setText(title);
-
-        ImageView imageView = (ImageView) layout.findViewById(R.id.cat_image);
-        imageView.setImageResource(cat);
 
         return layout;
     }
