@@ -1,6 +1,4 @@
-<LinearLayout
-    android:id="@+id/layout_1"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,6 +16,7 @@
         tools:text="@string/layout1_title" />
 
     <TextView
+        android:id="@+id/lorem_ipsum"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
